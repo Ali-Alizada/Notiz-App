@@ -1,0 +1,31 @@
+p button {
+  position: absolute;
+  bottom: 8px;
+  padding: 4px 8px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+p button.left {
+  left: 8px;
+}
+
+p button.right {
+  right: 8px;
+}
+
+.archivNote-btn,
+.restore-btn {
+  background-color: #2b6;
+}
+.notetoTrash-btn,
+.deleteNote-btn {
+  background-color: #e53e3e;
+}
+
+p button:hover {
+  opacity: 0.9;
+}

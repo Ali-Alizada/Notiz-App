@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notitzblock</title>
+  <link rel="icon" type="img/png" href="assets/icnos/Todo-1.png">
+  <link rel="stylesheet" href="./styles/font.css">
+  <link rel="stylesheet" href="styles/assets.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles/standart.css">
+  <link rel="stylesheet" href="styles/note.css">
+ 
+</head>
+
+<header>
+  <nav class="logo">
+    <a class="a-element" href=""><img src="assets/icnos/Todo-1.png" alt="logo"></a>
+  </nav>
+</header>
+
+<body onload="init()">
+  <h1>Notiz-App</h1>
+
+  <form action="">
+  <div class="note-input-container">
+    <label for="note-title">Titel:</label>
+    <input id="note-title" type="text" placeholder="Titel eingeben"/>
+    <label for="note-input">Notiz:</label>
+    <input id="note-input" type="text" placeholder="Notiz eingeben" required/>
+    <button class="note-btn" onclick="addNote(), saveData()">+ Notiz hinzufügen</button>
+  </div>
+  </form>
+
+  <h2>Notizen</h2>
+  <div id="content" class="content-text"></div>
+
+  <h2>Archiv</h2>
+  <div id="archiv-note" class="content-text"></div>
+
+  <h2>Papierkorb</h2>
+  <div id="trash-note" class="content-text"></div>
+
+</body>
+<script src="scripts/templates.js"></script>
+<script src="script.js"></script>
+</html>
+

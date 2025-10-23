@@ -38,5 +38,5 @@ Technologien
 - Verschiebe Notizen bei Bedarf ins Archiv oder Papierkorb.
 - Notizen bleiben erhalten – selbst nach dem Neuladen der Seite.
 
-Erstellt von Aliaq Alizada
-📅 Jahr: 2025
+Erstellt von: Aliaq Alizada
+- 📅 Jahr: 2025

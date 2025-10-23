@@ -4,6 +4,9 @@ Eine einfache und benutzerfreundliche Webanwendung zum Erstellen, Verwalten und 
 Notizen können hinzugefügt, ins Archiv verschoben, in den Papierkorb gelegt oder dauerhaft gelöscht werden.
 Alle Daten werden lokal im Browser gespeichert — ganz ohne Server oder Datenbank.
 
+
+---------------------------------------------------------------------------------------------------------
+
 🚀-  Features
 
 ✏️- Notizen hinzufügen mit Titel und Text
@@ -18,11 +21,15 @@ N- Wiederherstellen oder endgültig löschen
 
 📱 Responsives Design – funktioniert auf Desktop & Mobilgeräten
 
+---------------------------------------------------------------------------------------------------------
+
 Technologien
--> HTML5 – Struktur der Anwendung
--> CSS3 – Gestaltung und responsive Layouts
--> JavaScript (Vanilla JS) – Funktionalität und Logik
--> Local Storage API – lokale Datenspeicherung
+- HTML5 – Struktur der Anwendung
+- CSS3 – Gestaltung und responsive Layouts
+- JavaScript (Vanilla JS) – Funktionalität und Logik
+- Local Storage API – lokale Datenspeicherung
+
+---------------------------------------------------------------------------------------------------------
 
 💡 Verwendung
 - Öffne die App im Browser.

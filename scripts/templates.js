@@ -1,26 +1,27 @@
-function getNoteTemplate(idnex) {
+
+function getNoteTemplate(index) {
   return `
     <p>
-      <b>${notesTitles[idnex]}</b><br>${notes[idnex]}
-      <button class="archivNote-btn left" onclick="notetoArchiv(${idnex})">A</button>
-      <button class="notetoTrash-btn right" onclick="notetoTrash(${idnex})">P</button>
+      <b>${allNotes.notesTitles[index]}</b><br>${allNotes.notes[index]}
+      <button class="archivNote-btn left" onclick="moveNote(${index}, 'notes', 'archivNotes')">A</button>
+      <button class="notetoTrash-btn right" onclick="moveNote(${index}, 'notes', 'trashNotes')">P</button>
     </p>`;
 }
 
-function getArchivNoteTemplate(idnex) {
+function getArchivNoteTemplate(index) {
   return `
     <p>
-      <b>${archivNotesTitles[idnex]}</b><br>${archivNotes[idnex]}
-      <button class="restore-btn left" onclick="archivToNotes(${idnex})">N</button>
-      <button class="deleteNote-btn right" onclick="archivToTrash(${idnex})">P</button>
+      <b>${allNotes.archivNotesTitles[index]}</b><br>${allNotes.archivNotes[index]}
+      <button class="restore-btn left" onclick="moveNote(${index}, 'archivNotes', 'notes')">N</button>
+      <button class="deleteNote-btn right" onclick="moveNote(${index}, 'archivNotes', 'trashNotes')">P</button>
     </p>`;
 }
 
-function getTrashNoteTemplate(idnex) {
+function getTrashNoteTemplate(index) {
   return `
     <p>
-      <b>${trashNotesTitles[idnex]}</b><br>${trashNotes[idnex]}
-      <button class="restore-btn left" onclick="trashToNotes(${idnex})">N</button>
-      <button class="deleteNote-btn right" onclick="deleteNote(${idnex})">X</button>
+      <b>${allNotes.trashNotesTitles[index]}</b><br>${allNotes.trashNotes[index]}
+      <button class="restore-btn left" onclick="moveNote(${index}, 'trashNotes', 'notes')">N</button>
+      <button class="deleteNote-btn right" onclick="deleteNote(${index})">X</button>
     </p>`;
 }

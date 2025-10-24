@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="styles/standart.css">
   <link rel="stylesheet" href="styles/note.css">
- 
+
 </head>
 
 <header>
@@ -23,15 +23,16 @@
 <body onload="init()">
   <h1>Notiz-App</h1>
 
-  <form action="">
+<form onsubmit="return addNote()">
   <div class="note-input-container">
     <label for="note-title">Titel:</label>
-    <input id="note-title" type="text" placeholder="Titel eingeben"/>
+    <input id="note-title" type="text" placeholder="Titel eingeben" />
     <label for="note-input">Notiz:</label>
-    <input id="note-input" type="text" placeholder="Notiz eingeben" required/>
-    <button class="note-btn" onclick="addNote(), saveData()">+ Notiz hinzufügen</button>
+    <input id="note-input" type="text" placeholder="Notiz eingeben" required />
+    <button type="submit" class="note-btn">+ Notiz hinzufügen</button>
   </div>
-  </form>
+</form>
+
 
   <h2>Notizen</h2>
   <div id="content" class="content-text"></div>
@@ -45,5 +46,5 @@
 </body>
 <script src="scripts/templates.js"></script>
 <script src="script.js"></script>
-</html>
 
+</html>
